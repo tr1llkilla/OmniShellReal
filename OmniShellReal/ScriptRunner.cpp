@@ -1,4 +1,6 @@
-﻿// ScriptRunner.cpp
+Copyright © 2025 Cadell Richard Anderson
+
+// ScriptRunner.cpp
 
 #include "ScriptRunner.h"
 #include "CommandRouter.h"
