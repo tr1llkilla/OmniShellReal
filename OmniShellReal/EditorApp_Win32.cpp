@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 //EditorApp_Win32.cpp
 
 #if !defined(_WIN32)
@@ -7,7 +9,7 @@
 #define NOMINMAX // keep std::min/std::max intact
 #include "EditorApp.h"
 #include <windows.h>
-#include <windowsx.h> // GET_X_LPARAM / GET_Y_LPARAM / GET_WHEEL_DELTA_WPARAM
+#include <windowsx.h>
 #include <vector>
 #include <string>
 #include <optional>
