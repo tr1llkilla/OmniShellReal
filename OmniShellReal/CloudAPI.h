@@ -1,9 +1,11 @@
+Copyright © 2025 Cadell Richard Anderson
+
 // CloudAPI.h
 
 #pragma once
 
 #include "onecloud_c_api.h"
-#include "CloudError.h" // CORRECTED: Include the single, centralized error enum header
+#include "CloudError.h" 
 #include <string>
 #include <vector>
 #include <memory>
@@ -12,8 +14,6 @@
 #include <span>
 
 namespace onecloud {
-
-    // NOTE: The local 'enum class CloudError' has been removed from this file.
 
     // This is the C++ friendly wrapper around the C API
     class CloudAPI {
