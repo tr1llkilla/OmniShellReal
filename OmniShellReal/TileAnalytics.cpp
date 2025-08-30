@@ -1,6 +1,9 @@
-﻿// TileAnalytics.cpp
+Copyright © 2025 Cadell Richard Anderson
+
+
+// TileAnalytics.cpp
 #include "TileAnalytics.h"
-#include "OmniAIManager.h" // ADD
+#include "OmniAIManager.h" 
 
 
 #include <algorithm>
@@ -12,11 +15,11 @@
 #include <numeric>
 #include <sstream>
 #include <string>
-#include <iomanip> // ADD if you use setprecision/fixed
+#include <iomanip> 
 #include <unordered_map>
 #include <utility>
 #include <vector>
-#include <array> // added for histogram arrays
+#include <array> 
 
 namespace {
 
