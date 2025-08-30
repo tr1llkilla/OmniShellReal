@@ -1,10 +1,7 @@
+Copyright © 2025 Cadell Richard Anderson
+
 // =================================================================
 // SensorManager.cpp
-// Platform-specific implementation for sensor reading.
-// UPDATED with comprehensive sensor suite including Fans, Voltages, Power, and Battery for both platforms.
-// Additions: exhaustive hwmon parser, persistent hwmon mapping helper, LibreHardwareMonitor scanner,
-// generic CIM sensor scanner, and optional NVML/ROCm hooks (compile-time).
-// NOTE: This patch is fully additive and does not remove any existing functional code.
 // =================================================================
 #include "SensorManager.h"
 #include <iostream>
