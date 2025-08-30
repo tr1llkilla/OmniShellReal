@@ -1,16 +1,12 @@
-// BinaryManip.cpp
-// FINAL VERSION: All stubs are filled in with functional, endian-aware code.
-// Includes complete PE/ELF parsing for sections and symbols, and a functional
-// base for runtime attachment on Windows and Linux.
-// Integrated with advanced SIMD-accelerated byte swapping.
+Copyright © 2025 Cadell Richard Anderson
 
-// FIX 1: Add NOMINMAX before windows.h to prevent min/max macro conflicts.
+// BinaryManip.cpp
 #if defined(_WIN32)
 #define NOMINMAX
 #include <windows.h>
 #endif
 
-// FIX 2: Replaced includes that had invisible invalid characters with clean ones.
+
 #include "BinaryTranslator.h" // For disassembling
 #include "tokenizer.h"        // For turning assembly into AI tokens
 #include "math.h"             // For AI model math functions
