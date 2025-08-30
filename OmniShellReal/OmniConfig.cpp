@@ -138,7 +138,7 @@ namespace OmniConfigNS {
         }
 
         // 3) known absolute path
-        candidates.emplace_back(R"(Z:\source\OmniShell\config\OmniConfig.xml)");
+        candidates.emplace_back(R"(PATH)");
 
         // 4) exe-relative
         auto exeDir = get_exe_dir();
