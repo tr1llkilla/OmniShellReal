@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 #define ONECLOUD_EXPORTS // Define this before including the header to ensure dllexport is used
 
 // --- C++ headers MUST be included before C API headers ---
@@ -6,13 +8,12 @@
 #include <vector>
 #include <string>
 #include <memory>
-#include <cstring> // For malloc, free, memcpy, strdup
-#include <span>      // For std::span
+#include <cstring> 
+#include <span>   
 
 #include "onecloud_c_api.h"
 
 // Helper to convert C++ CloudError to C OneCloud_Error
-// FIXED: The CloudError enum is inside the 'onecloud' namespace.
 static OneCloud_Error to_c_error(onecloud::CloudError err) {
     return static_cast<OneCloud_Error>(err);
 }
