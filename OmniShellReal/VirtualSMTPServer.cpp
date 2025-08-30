@@ -1,10 +1,7 @@
-﻿// =================================================================
+Copyright © 2025 Cadell Richard Anderson
+
+// =================================================================
 // VirtualSMTPServer.cpp
-// Implements the in-process virtualized SMTP relay.
-// Decrypts ChaCha20 → XOR to get plaintext RFC-822, then does an
-// in-memory AES-256-GCM wrap/unwrap (for layered protection inside
-// the relay boundary), and finally transmits the readable message
-// via TLS to the real SMTP server (so recipients see plaintext).
 // =================================================================
 #include "VirtualSMTPServer.h"
 
