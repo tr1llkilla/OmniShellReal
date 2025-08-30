@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 //EditorApp_X11.cpp
 
 #include "EditorApp.h"
@@ -11,7 +13,7 @@
 std::optional<std::vector<std::string>>
 LaunchEditorWindow_X11(const EditorLaunchOptions& opts)
 {
-    // Not supported on this platform � return no result
+    // Not supported on this platform — return no result
     return std::nullopt;
 }
 
