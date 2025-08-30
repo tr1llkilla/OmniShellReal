@@ -1,8 +1,9 @@
+Copyright © 2025 Cadell Richard Anderson
 //ManifestSerializer.h
 
 #pragma once
 
-#include "types.h" // Includes the onecloud::Manifest, FileEntry, and DataChunk structs
+#include "types.h" 
 #include <span>
 #include <vector>
 #include <cstddef>
