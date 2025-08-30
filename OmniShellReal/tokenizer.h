@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 //tokenizer.h
 
 #pragma once
