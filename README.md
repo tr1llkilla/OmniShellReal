@@ -71,7 +71,7 @@ web_fetcher: A utility to fetch web content that can also render JavaScript-heav
 
 Secure Storage & Communications:
 
-CloudStorage & CryptoProvider: A complete, secure, encrypted cloud storage client. It features a custom binary format and uses modern cryptography (Argon2 for key derivation, ChaCha20-Poly1305 for authenticated encryption) via the Botan library.
+CloudStorage & CryptoProvider: A complete, secure, encrypted cloud storage client. It features a custom binary format and uses modern cryptography (Argon2 for key derivation, ChaCha20-Poly1305 for authenticated encryption) via the Botan library. (Will have to change this one because it seems Botan-3.dll doesn't like me and is racist and doesn't want to work on my project so im make new one)
 
 VirtualSMTPServer & ScriptRunner: An impressive module for sending emails with dynamically discovered attachments. It uses a virtualized SMTP server that applies multiple layers of encryption (ChaCha20, XOR, AES-GCM) for secure, in-memory relaying.
 
