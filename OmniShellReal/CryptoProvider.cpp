@@ -1,10 +1,12 @@
+Copyright © 2025 Cadell Richard Anderson
+
 #include "CryptoProvider.h"
 
 // --- Botan Dependency Headers ---
 #include <botan/auto_rng.h>
 #include <botan/aead.h>
 #include <botan/exceptn.h>
-#include <botan/pwdhash.h> // <-- REQUIRED for Botan 3 password hashing
+#include <botan/pwdhash.h>
 
 namespace onecloud {
 
@@ -29,7 +31,6 @@ namespace onecloud {
         const size_t p_factor = 1; // Parallelism
 
         try {
-            // Correct code for Botan 3.x API
             if (auto pwdhash_family = Botan::PasswordHashFamily::create("Argon2id")) {
                 auto pwdhash = pwdhash_family->from_params(t_cost, m_cost, p_factor);
                 pwdhash->derive_key(
@@ -64,7 +65,6 @@ namespace onecloud {
             auto nonce = random_bytes(nonce_length());
             aead->start(reinterpret_cast<const uint8_t*>(nonce.data()), nonce.size());
 
-            // FIXED: Explicitly cast from std::byte* to uint8_t* for the constructor
             Botan::secure_vector<uint8_t> buffer(
                 reinterpret_cast<const uint8_t*>(plaintext.data()),
                 reinterpret_cast<const uint8_t*>(plaintext.data()) + plaintext.size()
@@ -99,7 +99,6 @@ namespace onecloud {
             aead->start(reinterpret_cast<const uint8_t*>(nonce.data()), nonce.size());
 
             auto ciphertext_and_tag = encrypted_data.subspan(nonce_length());
-            // FIXED: Explicitly cast from std::byte* to uint8_t* for the constructor
             Botan::secure_vector<uint8_t> buffer(
                 reinterpret_cast<const uint8_t*>(ciphertext_and_tag.data()),
                 reinterpret_cast<const uint8_t*>(ciphertext_and_tag.data()) + ciphertext_and_tag.size()
