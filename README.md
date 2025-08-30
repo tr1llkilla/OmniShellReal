@@ -205,6 +205,10 @@ Add Visualization(WILL TURN INTO GAMING ENGINE AND VISUALIZER): The TileAnalytic
 
 Complete the Cloud Filesystem(BROKEN ATM): The omni:cloud:mount command is a placeholder for a virtual filesystem using the Windows Cloud Filter API or FUSE on Linux. Implementing this would allow users to interact with their secure, encrypted cloud containers as if they were a local drive.
 
+Networking Interface: I will be updating and upgrading my networking interface within this CLI to be more expressive and compatible with networking programs like wireshark. Ultimately all of the monitoring classes are precursors to a new Virtual Router (IronRouter) that will eliminate the need for a physical router, or to add another alternative optional layer of security. 
+
+Compiler and OS: The conception of this project really stemmed from my active response to a forum post I saw randomly on the internet about booting Rasbperry Pi OS. The commenter made a condescending comment about how we should just be real programmers and write our own boot system for RaspBerry Pi instead of just using pre-loaded software like scriptkiddies. I then proceeded to take on the challenge of creating this project out of respect for the game. I wonder what it will look like in 10 years.
+
 I ALSO MAKE MUSIC N STUFF SO ILL BE MAKING A VIRTUAL AUDIO INTERFACE AS WELL. 
 
 I USE AI TO HELP ME WITH A LOT OF STUFF AND THERE IS NO WAY I CAN'T AT THIS POINT WITH ALL OF THE PROJECTS I'M WORKING ON!
