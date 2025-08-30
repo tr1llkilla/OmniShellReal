@@ -1,12 +1,14 @@
-﻿//===============================
+Copyright © 2025 Cadell Richard Anderson
+
+//===============================
 // PMU.cpp
 //===================================
 #include "PMU.h"
-#include "OmniAIManager.h" // ADD
+#include "OmniAIManager.h" 
 
 #include <vector>
 #include <string>
-#include <sstream>     // std::istringstream
+#include <sstream>    
 #include <fstream>
 #include <algorithm>
 #include <iomanip>
@@ -14,7 +16,6 @@
 #include <chrono>
 #include <utility>
 
-// ADD: utility headers for extensions
 #include <functional>
 #include <map>
 #include <thread>
@@ -34,7 +35,6 @@
 #include <processthreadsapi.h>
 #include <tlhelp32.h>
 #pragma comment(lib, "Advapi32.lib")
-// Fallback define for older SDKs
 #ifndef THREAD_QUERY_LIMITED_INFORMATION
 #define THREAD_QUERY_LIMITED_INFORMATION 0x0800
 #endif
