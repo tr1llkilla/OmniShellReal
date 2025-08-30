@@ -1,9 +1,7 @@
+Copyright Â© 2025 Cadell Richard Anderson
+
 // =================================================================
 // VirtualSMTPServer.h
-// A lightweight in-process “virtualized SMTP relay” that accepts
-// a ChaCha20+XOR protected RFC-822 payload, optionally performs
-// an AES-256-GCM wrap/unwrap in-memory, and then sends a readable
-// email to the real SMTP server over TLS.
 // =================================================================
 #pragma once
 #include <string>
