@@ -198,10 +198,10 @@ This project has an incredible foundation. Here are some ways to expand it:
 
 Flesh out Stubbed Modules: The frameworks for binary translation (Translate), runtime instrumentation (Rewrite), and network analysis are in place but marked as not implemented. Completing these would make OmniShell a world-class reverse engineering and network analysis tool.
 
-Integrate More AI Backends: The ai_engine is designed to be a generic interface. Add concrete implementations for popular backends like Ollama (for running various local models), llama.cpp, or remote APIs like OpenAI.
+Integrate More AI Backends(AI ENGINE IS IN THE PROCESS): The ai_engine is designed to be a generic interface. Add concrete implementations for popular backends like Ollama (for running various local models), llama.cpp, or remote APIs like OpenAI.
 
 Develop a First-Class Scripting Language: Instead of just shelling out to Python or Bash, create a simple, high-level scripting language for OmniShell. This would allow scripts to directly access and manipulate internal state like sensor data, job lists, and AI analysis results, enabling incredibly powerful automation.
 
-Add Visualization: The TileAnalytics module generates heatmap data (.pgm files), and the PMU generates CSVs. Add commands that can convert this data into graphical charts or images directly from the command line, or even launch a simple GUI window to display them.
+Add Visualization(WILL TURN INTO GAMING ENGINE AND VISUALIZER): The TileAnalytics module generates heatmap data (.pgm files), and the PMU generates CSVs. Add commands that can convert this data into graphical charts or images directly from the command line, or even launch a simple GUI window to display them.
 
-Complete the Cloud Filesystem: The omni:cloud:mount command is a placeholder for a virtual filesystem using the Windows Cloud Filter API or FUSE on Linux. Implementing this would allow users to interact with their secure, encrypted cloud containers as if they were a local drive.
+Complete the Cloud Filesystem(BROKEN ATM): The omni:cloud:mount command is a placeholder for a virtual filesystem using the Windows Cloud Filter API or FUSE on Linux. Implementing this would allow users to interact with their secure, encrypted cloud containers as if they were a local drive.
