@@ -1,5 +1,6 @@
+Copyright © 2025 Cadell Richard Anderson
+
 // packet_writer.cpp
-// Implementation of the PacketWriter class for Windows.
 
 #include "packet_writer.h"
 #include <iostream>
