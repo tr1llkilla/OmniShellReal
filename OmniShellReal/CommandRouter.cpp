@@ -2156,11 +2156,11 @@ namespace {
         std::string streamingFilename;
 
         // new parametric fields
-        std::string smtpServer = "smtp.gmail.com";
-        std::string smtpPort = "587";
-        std::string fromHeader = "Mail.gmail.com";
-        std::string smtpUser = "cadellanderson@gmail.com";
-        std::string smtpPass = "nooj thkv lqmy fuxp";
+        std::string smtpServer = "exserver: smtp.gmail.com";
+        std::string smtpPort = "EmailPort";
+        std::string fromHeader = "exHeaderMail.gmail.com";
+        std::string smtpUser = "YourEmailn@gmail.com";
+        std::string smtpPass = "yoursetsmtp pass";
 
         for (size_t i = 1; i < args.size(); ++i) {
             if (args[i] == "--to" && i + 1 < args.size()) {
