@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 //PolyglotC.h - Class for building Polyglot C code from XML definitions
 
 #pragma once
