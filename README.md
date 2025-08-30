@@ -207,7 +207,7 @@ Complete the Cloud Filesystem(BROKEN ATM): The omni:cloud:mount command is a pla
 
 Networking Interface: I will be updating and upgrading my networking interface within this CLI to be more expressive and compatible with networking programs like wireshark. Ultimately all of the monitoring classes are precursors to a new Virtual Router (IronRouter) that will eliminate the need for a physical router, or to add another alternative optional layer of security. 
 
-Compiler and OS: The conception of this project really stemmed from my active response to a forum post I saw randomly on the internet about booting Rasbperry Pi OS. The commenter made a condescending comment about how we should just be real programmers and write our own boot system for RaspBerry Pi instead of just using pre-loaded software like scriptkiddies. I then proceeded to take on the challenge of creating this project out of respect for the game. I wonder what it will look like in 10 years.
+Compiler and OS: The conception of this project really stemmed from my active response to a forum post I saw randomly on the internet about booting Rasbperry Pi OS. The commenter made a condescending post about how we should just be real programmers and write our own boot systems for RaspBerry Pi instead of just using pre-loaded software like scriptkiddies. I then proceeded to take on the challenge of creating this project out of respect for the game. I wonder what it will look like in 10 years.
 
 I ALSO MAKE MUSIC N STUFF SO ILL BE MAKING A VIRTUAL AUDIO INTERFACE AS WELL. 
 
