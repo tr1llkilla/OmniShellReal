@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 // TileAnalytics.h
 #pragma once
 #include <string>
@@ -20,7 +22,7 @@ struct TileRunConfig {
     size_t cols{ 256 };
 
     // Scheduling/telemetry targets
-    double target_time_ms{ 0.8 };  // 0.2�2.0 typical
+    double target_time_ms{ 0.8 };  // 0.2–2.0 typical
 
     // Overlap between adjacent tiles (in samples)
     size_t overlap_h{ 1 };
