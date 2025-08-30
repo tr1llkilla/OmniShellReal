@@ -1,4 +1,6 @@
-// model.cpp - drop-in stub implementation for CLLF public API
+Copyright © 2025 Cadell Richard Anderson
+
+// model.cpp 
 #include "model.h"
 #include "math.h"  // added for softmax_inplace, top_k_filter
 #include <fstream>
@@ -59,7 +61,7 @@ namespace ai::gen {
         }
     }
 
-    // Non-template generate driving an ILogitModel � matches model.h decl
+    // Non-template generate driving an ILogitModel — matches model.h decl
     std::vector<token_id> generate(ILogitModel& model,
         const std::vector<token_id>& prompt,
         const GenerationConfig& cfg,
