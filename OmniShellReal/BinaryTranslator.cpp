@@ -2,7 +2,7 @@
 // BinaryTranslator.cpp
 // =================================================================
 #include "BinaryTranslator.h"
-#include "BinaryManip.h"      // ADDED: To use the Probe function for metadata
+#include "BinaryManip.h"    
 #include <capstone/capstone.h>
 #include <fstream>
 #include <sstream>
@@ -12,7 +12,6 @@
 #pragma comment(lib, "capstone.lib")
 
 std::string BinaryTranslator::ExtractMetadata(const std::string& binaryPath) {
-    // FIX: Replaced placeholder logic with a call to the robust BinaryManip::Probe function
     auto info = BinaryManip::Probe(binaryPath);
     std::ostringstream meta;
     meta << "[Metadata for: " << binaryPath << "]\n";
