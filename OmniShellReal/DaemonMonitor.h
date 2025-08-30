@@ -1,7 +1,9 @@
+Copyright Â© 2025 Cadell Richard Anderson
+
 #pragma once
 #include "OmniConfig.h"
-#include "OmniAIManager.h"   // for SamplingProfile definition
-#include "SensorManager.h"   // for SensorData struct definition
+#include "OmniAIManager.h"   
+#include "SensorManager.h"  
 #include <thread>
 #include <atomic>
 #include <string>
@@ -19,7 +21,7 @@ public:
     // Expose to CLI
     void captureTileTelemetry();
 
-    // Moved from private: so it’s callable externally
+
     SamplingProfile decideProfile(
         const std::vector<SensorData>& sensors,
         const ConfigState& currentConfig
