@@ -1,13 +1,7 @@
+Copyright © 2025 Cadell Richard Anderson
+
 // web_fetcher.cpp
-// Implementation of the URL fetching functionality using an enhanced MSHTML virtual browser.
 
-// =================================================================
-// 1. CRITICAL: Platform-specific headers MUST come first to ensure
-// all Windows API definitions are available before they are used.
-// =================================================================
-
-// FIX: Define the minimum Windows version required BEFORE including windows.h.
-// This makes modern functions like WinHttpAddHeaders available to the compiler.
 #ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif
