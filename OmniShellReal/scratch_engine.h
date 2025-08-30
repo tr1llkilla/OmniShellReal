@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 //scratch_engine.h
 #pragma once
 #include "ai_engine.h"
@@ -9,7 +11,7 @@
 
 namespace ai {
 
-    // Forward declaration � actual adapter is in scratch_engine.cpp
+    // Forward declaration — actual adapter is in scratch_engine.cpp
     class TransformerModel;
 
     class ScratchEngine final : public IEngine {
