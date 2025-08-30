@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 // ddc_engine.cpp
 #include "ddc_engine.h"
 #define _USE_MATH_DEFINES // Ensures M_PI is defined in <cmath>
