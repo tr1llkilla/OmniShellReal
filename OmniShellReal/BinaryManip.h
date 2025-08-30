@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+//BinaryManip.h
 #pragma once
 #include <string>
 #include <vector>
