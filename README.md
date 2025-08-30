@@ -18,6 +18,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+
+
+!!!!!!!!!!!! NOW TO THE JUICE
+
 Project Synopsis: OmniShell
 OmniShell is a "super-tool" CLI designed for advanced system interaction, diagnostics, and remediation. It goes far beyond a typical shell by integrating a diverse suite of powerful modules into a single, context-aware environment. At its core, it's an extensible platform for developers, system administrators, and cybersecurity analysts.
 
