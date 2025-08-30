@@ -1,8 +1,8 @@
+Copyright © 2025 Cadell Richard Anderson
+
 // =================================================================
 // ShellExecutor.h
 // Defines the interface for the process execution engine.
-// UPDATED to support cross-platform implementation with Unicode
-// and structured process results.
 // =================================================================
 #pragma once
 #include <string>
