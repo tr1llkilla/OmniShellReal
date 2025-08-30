@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 #pragma once
 // web_fetcher.h
 // A simple, self-contained module for fetching content from a URL using WinHTTP
