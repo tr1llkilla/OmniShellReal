@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 #ifndef ONECLOUD_C_API_H
 #define ONECLOUD_C_API_H
 
