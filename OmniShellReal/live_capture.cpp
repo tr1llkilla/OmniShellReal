@@ -1,4 +1,6 @@
-﻿// live_capture.cpp
+Copyright © 2025 Cadell Richard Anderson
+
+// live_capture.cpp
 
 #include "live_capture.h"
 #include <pcap.h>
