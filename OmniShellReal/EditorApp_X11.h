@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 //EditorApp_X11.h
 
 #include "EditorApp.h"
