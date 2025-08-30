@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 // =================================================================
 // CommandRouter.h
 // Drop-in header for CommandRouter
@@ -13,9 +15,9 @@ class CommandRouter {
 public:
     // ---------------- Command Metadata ----------------
     struct CommandMeta {
-        std::string category;       // e.g., "Core", "Diagnostics"
-        std::string usage;          // Short syntax, e.g., "cd [path|-]"
-        std::string summary;        // One-line description
+        std::string category;     
+        std::string usage;        
+        std::string summary;       
         bool platform_win{ false };
         bool platform_linux{ false };
         bool platform_mac{ false };
