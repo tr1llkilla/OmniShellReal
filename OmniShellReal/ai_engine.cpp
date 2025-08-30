@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 // ai_engine.cpp
 #include "ai_engine.h"
 #include "scratch_engine.h"
