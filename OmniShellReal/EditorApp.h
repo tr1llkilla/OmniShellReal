@@ -1,4 +1,6 @@
-﻿//EditorApp.h
+Copyright © 2025 Cadell Richard Anderson
+
+//EditorApp.h
 #pragma once
 
 #include <optional>
