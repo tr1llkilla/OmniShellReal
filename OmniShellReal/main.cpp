@@ -1,9 +1,7 @@
+Copyright © 2025 Cadell Richard Anderson
+
 // =================================================================
 // main.cpp
-// UPDATED with administrative privilege check and correct OmniConfigNS::load usage.
-// ADDED: LLM engine integration (no external dependencies)
-// PATCHED: Quiet-mode + UTF-8 handling; LLM generation respects redirection (no streaming/prompts when quiet)
-// NEW: Added programmatic self-exclusion for Windows Defender.
 // =================================================================
 #include <iostream>
 #include <string>
@@ -21,34 +19,32 @@
 #include "OmniConfig.h"
 #include "CommandRouter.h"
 #include "ScriptRunner.h"
-// #include "SensorManager.h" // FIX: Removed redundant include
+
 #include "PolyglotC.h"
 #include "JobManager.h"
 
-// ADDED: bring in the no-dependency LLM engine you added to the project
 #include "model.h"
 
-// ADDED: bring in PMU monitor integration
+
 #include "PMU.h"
 #include <thread>
 #include <atomic>
 #include <chrono>
 
-// ADDED: To call the new Defender exclusion function
+
 #include "BinaryManip.h"
 
 #ifdef _WIN32
 #include <Windows.h>
 #include <shellapi.h>
 #elif __linux__
-#include <unistd.h> // For geteuid(), isatty()
+#include <unistd.h> 
 #endif
 
 // Global config object
 ConfigState appConfig;
 
 #ifdef _WIN32
-// FIX: Marked function as static per warning VCR003
 // Function to check if the process is running as an administrator
 static bool isRunningAsAdmin() {
     BOOL fIsAdmin = FALSE;
@@ -68,7 +64,7 @@ static bool isRunningAsAdmin() {
 }
 #endif
 
-// FIX: Marked function as static per warning VCR003
+
 static void printBanner() {
     std::cout << R"(                                  ____  _                            
   ___   ___     ___   _        _ /  __|| |_   
@@ -81,7 +77,7 @@ static void printBanner() {
 )" << std::endl;
 }
 
-// FIX: Marked function as static per warning VCR003
+
 static void loadConfig() {
     // Attempt to load OmniConfig.xml into appConfig
     if (!OmniConfigNS::load("OmniConfig.xml", appConfig)) {
@@ -92,7 +88,7 @@ static void loadConfig() {
     }
 }
 
-// FIX: Marked function as static per warning VCR003
+
 static void monitorSensors(CommandRouter& router) { // Pass router by reference
     if (!appConfig.monitorSensors) {
         std::cout << "[*] Sensor monitoring is disabled in OmniConfig.xml." << std::endl;
@@ -134,10 +130,7 @@ static void monitorSensors(CommandRouter& router) { // Pass router by reference
     }
 }
 
-// =================================================================
-// ADDED: PMU CLI handler (non-destructive integration)
-// =================================================================
-// FIX: Marked function as static per warning VCR003
+
 static int omni_pmu_main(int argc, char* argv[]) {
     using namespace std::chrono;
 
@@ -188,12 +181,7 @@ static int omni_pmu_main(int argc, char* argv[]) {
     return 0;
 }
 
-// =================================================================
-// ADDED: LLM engine integration (no external dependencies)
-// - Standalone CLI flags: --llm-run, --llm-repl
-// - Interactive OmniShell inline commands: llm:help, llm:load, llm:gen, llm:status
-// PATCHED: Respect OMNI_QUIET for non-streaming, no prompts when redirected
-// =================================================================
+
 namespace LLM {
 
     static CLLF g_engine;
@@ -212,7 +200,7 @@ namespace LLM {
         bool run = false;
     };
 
-    // PATCHED: helper to detect quiet mode from environment (safe CRT version)
+    
     static bool isQuiet() {
         char* value = nullptr;
         size_t len = 0;
@@ -270,7 +258,7 @@ Notes:
         return true;
     }
 
-    // PATCHED: honor quiet mode by disabling streaming and prompts
+   
     static int runOnce(Options opt) {
         if (!ensureLoaded(opt.model)) return 2;
 
