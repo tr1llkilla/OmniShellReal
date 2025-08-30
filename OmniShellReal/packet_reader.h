@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 //packet_reader.h
 
 #pragma once
@@ -6,7 +8,6 @@
 
 namespace ironrouter {
 
-    // Renamed for clarity and consistency with the InProcessPacketWriter/Reader classes.
     class InProcessPacketReaderHelper {
     public:
         InProcessPacketReaderHelper() = default;
