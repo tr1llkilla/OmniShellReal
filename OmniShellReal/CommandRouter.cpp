@@ -1,11 +1,7 @@
-﻿// =================================================================
+Copyright © 2025 Cadell Richard Anderson
+
+// =================================================================
 // CommandRouter.cpp
-// Refactored: no local functions, no lambdas.
-// - All command handlers are free functions at file scope
-// - Constructor only registers handlers
-// - Balanced braces and preprocessor blocks
-// - Added persistent working directory (cd/pwd) and process CWD sync
-// - Replaced omni:edit lambda with free function
 // =================================================================
 
 #if defined(_WIN32)
@@ -72,7 +68,6 @@
 #include "web_fetcher.h"
 #include "CloudAPI.h"
 
-// FINAL FIX: Manually define M_PI if it's still not found to prevent include order issues.
 #ifndef M_PI
 #define M_PI 3.14159265358979323846
 #endif
@@ -534,14 +529,13 @@ namespace {
         if (args.size() < 3) {
             return "Usage: omni:cloud:list <container_path> <password>";
         }
-        // CORRECTED: Use the renamed CloudAPI class
         auto open_result = onecloud::CloudAPI::open(args[1], args[2]);
         if (!open_result) {
             return "Error: " + errorToString(open_result.error());
         }
 
         auto& storage = *open_result;
-        // CORRECTED: The wrapper method is list_files()
+ 
         auto list_result = storage.list_files();
         if (!list_result) {
             return "Error: " + errorToString(list_result.error());
@@ -578,14 +572,13 @@ namespace {
             return "Error: Failed to read local file '" + local_path + "'.";
         }
 
-        // CORRECTED: Use the renamed CloudAPI class
         auto open_result = onecloud::CloudAPI::open(container_path, password);
         if (!open_result) {
             return "Error: " + errorToString(open_result.error());
         }
 
         auto& storage = *open_result;
-        // CORRECTED: The wrapper method is write_file()
+
         auto write_result = storage.write_file(virtual_path, buffer);
         if (write_result) {
             return "Successfully uploaded '" + local_path + "' to '" + virtual_path + "'.";
@@ -601,15 +594,13 @@ namespace {
         const std::string& password = args[2];
         const std::string& virtual_path = args[3];
         const std::string& local_path = args[4];
-
-        // CORRECTED: Use the renamed CloudAPI class
+        
         auto open_result = onecloud::CloudAPI::open(container_path, password);
         if (!open_result) {
             return "Error: " + errorToString(open_result.error());
         }
 
         auto& storage = *open_result;
-        // CORRECTED: The wrapper method is read_file()
         auto read_result = storage.read_file(virtual_path);
         if (!read_result) {
             return "Error: " + errorToString(read_result.error());
@@ -631,14 +622,14 @@ namespace {
         const std::string& password = args[2];
         const std::string& virtual_path = args[3];
 
-        // CORRECTED: Use the renamed CloudAPI class
+      
         auto open_result = onecloud::CloudAPI::open(container_path, password);
         if (!open_result) {
             return "Error: " + errorToString(open_result.error());
         }
 
         auto& storage = *open_result;
-        // CORRECTED: The wrapper method is delete_file()
+     
         auto delete_result = storage.delete_file(virtual_path);
         if (delete_result) {
             return "Successfully deleted '" + virtual_path + "' from the container.";
