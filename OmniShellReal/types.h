@@ -26,7 +26,6 @@ using u32 = uint32_t;
 using u64 = uint64_t;
 using u8 = uint8_t;
 
-// ==== NEW: Stronger semantic typedefs for AI pipelines ====
 using token_id = i32;
 using vocab_size = u32;
 
@@ -55,7 +54,6 @@ struct SamplingParams {
     f32 repetition_penalty = 1.1f;
     bool do_sample = true;
 
-    // ==== ADDITION: minimum probability threshold ====
     f32 min_prob = 0.0f;
 
     bool has_min_prob() const noexcept { return min_prob > 0.0f; }
