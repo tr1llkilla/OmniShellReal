@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 //packet_frame.cpp
 
 #include "packet_frame.h"
