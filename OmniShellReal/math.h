@@ -1,9 +1,11 @@
-﻿#pragma once
+Copyright © 2025 Cadell Richard Anderson
+
+#pragma once
 #include "types.h"
 #include <numeric>
-#include <vector>      // Required for std::vector
-#include <functional>  // Required for std::greater
-#include <cmath>       // Required for std::exp, std::sqrt, std::tanh
+#include <vector>      
+#include <functional>
+#include <cmath>     
 
 // Existing naive row-major matmul
 inline void matmul(const f32* A, const f32* B, f32* C, i32 M, i32 K, i32 N) {
