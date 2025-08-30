@@ -204,3 +204,9 @@ Develop a First-Class Scripting Language: Instead of just shelling out to Python
 Add Visualization(WILL TURN INTO GAMING ENGINE AND VISUALIZER): The TileAnalytics module generates heatmap data (.pgm files), and the PMU generates CSVs. Add commands that can convert this data into graphical charts or images directly from the command line, or even launch a simple GUI window to display them.
 
 Complete the Cloud Filesystem(BROKEN ATM): The omni:cloud:mount command is a placeholder for a virtual filesystem using the Windows Cloud Filter API or FUSE on Linux. Implementing this would allow users to interact with their secure, encrypted cloud containers as if they were a local drive.
+
+I ALSO MAKE MUSIC N STUFF SO ILL BE MAKING A VIRTUAL AUDIO INTERFACE AS WELL. 
+
+I USE AI TO HELP ME WITH A LOT OF STUFF AND THERE IS NO WAY I CAN'T AT THIS POINT WITH ALL OF THE PROJECTS I'M WORKING ON!
+
+HAVE FUN!!!!!
