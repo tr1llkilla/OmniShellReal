@@ -1,4 +1,6 @@
-﻿// live_capture.h
+Copyright © 2025 Cadell Richard Anderson
+
+// live_capture.h
 
 #pragma once
 #include "types.h" // For PcapRecordHeader, u8, etc.
