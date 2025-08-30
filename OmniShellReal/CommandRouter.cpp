@@ -2353,7 +2353,7 @@ namespace {
     // =================================================================
     std::string Cmd_CfgReload(const Args&) {
         try {
-            const std::string cfgPath = R"(Z:\source\OmniShell\config\OmniConfig.xml)";
+            const std::string cfgPath = R"PATH";
             if (OmniConfigNS::load(cfgPath, appConfig)) {
                 return "[Config] Reloaded: " + cfgPath;
             }
