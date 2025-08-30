@@ -1,5 +1,7 @@
+Copyright © 2025 Cadell Richard Anderson
+
 #include "CloudStorage.h"
-#include "ManifestSerializer.h" // Defines Manifest, FileEntry, DataChunk
+#include "ManifestSerializer.h"
 #include "CryptoProvider.h"
 #include <zstd.h>
 #include <fstream>
