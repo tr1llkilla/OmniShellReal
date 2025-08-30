@@ -1,9 +1,11 @@
+Copyright © 2025 Cadell Richard Anderson
+
 // =================================================================
 // DaemonMonitor.cpp
 // =================================================================
 #include "DaemonMonitor.h"
-#include "SensorManager.h"      // SensorData, listSensors()
-#include "OmniAIManager.h"      // SamplingProfile, applySamplingProfile
+#include "SensorManager.h"      
+#include "OmniAIManager.h"     
 #include "ShellExecutor.h"
 #include "CommandRouter.h"
 #include "TileAnalytics.h"
