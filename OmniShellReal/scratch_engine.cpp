@@ -1,5 +1,6 @@
-﻿// src/ai/engines/scratch_engine.cpp
-// Glue layer: Tokenizer + TransformerModel + streaming sampler + telemetry hooks.
+Copyright © 2025 Cadell Richard Anderson
+
+//scratch_engine.cpp
 
 #include <algorithm>
 #include <chrono>
