@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 //ap_pcap_listener.h
 
 #pragma once
