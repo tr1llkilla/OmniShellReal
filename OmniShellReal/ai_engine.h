@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 //ai_engine.h
 #pragma once
 #include <string>
