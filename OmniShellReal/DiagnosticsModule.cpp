@@ -1,6 +1,6 @@
+Copyright © 2025 Cadell Richard Anderson
 // =================================================================
 // DiagnosticsModule.cpp
-// UPDATED with concurrent, intelligent AI analysis for high-entropy files.
 // =================================================================
 #include "DiagnosticsModule.h"
 #include "ShellExecutor.h"
