@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 // ManifestSerializer.cpp
 
 #include "ManifestSerializer.h"
