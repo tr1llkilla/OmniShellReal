@@ -1,3 +1,5 @@
+Copyright © 2025 Cadell Richard Anderson
+
 //CryptoProvider.h
 
 #pragma once
@@ -6,7 +8,7 @@
 #include <string>
 #include <expected>
 #include <span>
-#include "CloudAPI.h" // For the CloudError enum
+#include "CloudAPI.h" 
 
 namespace onecloud {
 
