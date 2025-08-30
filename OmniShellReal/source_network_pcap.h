@@ -1,4 +1,6 @@
-﻿// source_network_pcap.h
+Copyright © 2025 Cadell Richard Anderson
+
+// source_network_pcap.h
 #pragma once
 #include "types.h"
 #include "packet_frame.h"
@@ -14,7 +16,6 @@
 
 namespace ironrouter {
 
-    // ✅ ADDED: Definition for the missing struct
     struct LiveCaptureDevice {
         int id;
         std::string name;
