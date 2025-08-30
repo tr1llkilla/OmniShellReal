@@ -1,5 +1,6 @@
+Copyright © 2025 Cadell Richard Anderson
+
 // OmniAIManager.cpp
-// UPDATED to use the full suite of sensor data for more intelligent analysis.
 
 #include "OmniAIManager.h"
 #include "SensorManager.h"
