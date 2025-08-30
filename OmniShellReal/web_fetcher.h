@@ -8,7 +8,6 @@ Copyright © 2025 Cadell Richard Anderson
 #include <vector>
 
 #if defined(_WIN32)
-// FIX: Define minimum Windows version before including windows.h
 // This ensures modern functions like WinHttpAddHeaders are available.
 #ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
@@ -19,8 +18,8 @@ Copyright © 2025 Cadell Richard Anderson
 #ifndef _WIN32_WINNT
 #define _WIN32_WINNT 0x0601 // Windows 7 or newer
 #endif
-#include <windows.h> // Required for WinHTTP types
-#include <winhttp.h> // FIX #1: Added this include. It declares WinHttpAddHeaders and other functions.
+#include <windows.h>
+#include <winhttp.h>
 #endif
 
 namespace web {
@@ -33,8 +32,8 @@ namespace web {
         std::vector<std::wstring> links;
         std::wstring errorMessage;
     };
-
-    // FIX #2: Added the declaration for fetch_url so other files like CommandRouter.cpp can see it.
+ 
+  
     FetchResult fetch_url(const std::wstring& url_in);
 
     // Renders a URL using the MSHTML COM engine to handle JavaScript.
